@@ -1,0 +1,12 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient( to right, #e0c3fc, #8ec5fc);
+}
+
+section{
+    background-color: #ffffff;
+    height: 500px;
+    width: 90%;
+}
+
+

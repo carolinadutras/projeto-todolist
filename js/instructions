@@ -1,0 +1,199 @@
+// criando tarefas a serem executadas
+// capturar o botão add e adicionar um evento no botao 
+// criar uma variavel para guardar o input anterior que é a tarefa a ser executada
+
+SCRIPT
+
+// let inputDaTarefa = document.querySelector('.input')
+
+let btnAdd = document.querySelector('.btnAdd');
+btnAdd.classList.add('btnAdd')
+
+
+const toDo = document.getElementById('toDo')
+
+// const allToDo = document.getElementById ('allToDo')
+
+let inputNovaTarefa = document.querySelector('.inputTask');
+
+const inputTodasTarefas =  document.createElement('p');
+
+const erro = document.getElementById('erro');
+erro.classList.add('erro');
+
+
+btnAdd.addEventListener('click', function(){
+
+toDo.appendChild(inputTodasTarefas);
+
+let tarefa = inputNovaTarefa.value;
+
+console.log(inputNovaTarefa.value);
+
+if (tarefa.trim()==''){
+    
+    erro.textContent = 'escreva algo linda!'
+
+}
+else{
+    
+    let tarefaAnterior = document.createElement ('p');
+    toDo.appendChild(tarefaAnterior);
+    tarefaAnterior.textContent = tarefa;
+    tarefaAnterior.classList('tarefa')
+    inputNovaTarefa == ''
+    }
+
+})
+
+// if  (mensagem.trim() ===''){
+//     erro.textContent = 'Escreva algo, senhora!';
+//     erro.classList.add('erro');
+
+// ouuuuu- metodo que dá bug   let mensagemErrada = document.createElement('p');
+
+// erro.appendChild(mensagemErrada);
+// mensagemErrada.textContent='Digite um texto válido!';
+// mensagemErrada.classList.add('erro');
+
+
+
+
+// else {
+//     let mensagemAnterior = document.createElement('p');
+//     erro.textContent='';
+//     todosOsComentarios.appendChild(mensagemAnterior);
+
+//     mensagemAnterior.textContent= mensagem;
+//     mensagemAnterior.classList.add('comentario')
+//     formulario.reset(); // interessante usar em formularios maiores com mais campos...
+//     erro.classList.remove('erro');
+//     //ou caixaDoComentario.value=""
+//     }
+// });
+
+
+CSS
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(to right, #8ec5fc, #ba7af8);
+
+}
+section{
+    background-color: #ffffff;
+    width: 90%;
+    height: 100%;
+    
+}
+/* ------Botões------- */
+
+.btnAdd{
+    background-color: #ba7af8;
+    font-weight: bold;
+    border: none;
+    width: 100%;
+    border-radius: 2px;   
+    height: 40px;
+    color: #ffffff
+    
+  
+}
+
+.allBtn{
+    display: flex;  
+    border: none;
+}
+
+
+
+.btnDelete {
+    background-color: #f87a7a;
+    font-weight: bold;
+    border: none;
+    width: 60%;
+    border-radius: 2px;   
+    height: 40px;
+    color: #ffffff
+
+}
+
+.btnSelect {
+    background-color: #8ff87a;
+    font-weight: bold;
+    border: none;
+    width: 60%;
+    border-radius: 2px;   
+    height: 40px;
+    color: #ffffff;
+}
+
+
+
+.tarefa{
+    text-align: center;
+    font-style: italic;
+    background-color: #ffffff;
+    width: 100%;
+    border-radius: 2px;   
+    height: 40px;
+
+
+}
+.inputTask{
+    border: none;
+    background-color: #ffffff;
+    width: 90%;
+    border-radius: 2px;   
+    height: 40px;
+
+}
+.erro{
+    font-size: 12px;
+    background-color: pink;
+    padding: 15px 5px;
+    border-radius: 5px;
+    border-color: red;
+    color:red;
+    text-align: center;
+}
+
+
+
+
+HTML
+
+
+<body>
+    <section>
+    <div id="title">
+        <h1>Adicione uma nova tarefa</h1>
+    </div>
+
+    <form action=""></form>
+    
+    <div class="input">
+        <input type="text" class="inputTask" placeholder="Digite uma nova tarefa">
+        </div>
+
+        <div id="erro"></div>
+
+
+    <div class="btnAdd">
+        <button class="btnAdd">Add</button> 
+    </div>
+
+
+    <div id="allToDo" class="containt">
+
+        <ul id="toDo" class="toDo">
+
+        </ul>
+    </div>
+
+
+
+<div class="allBtn">
+    <button class="btnSelect" id="btnSelect"> selecionar todos</button>
+    <button class="btnDelete" id="btnDelete"> remover todos</button>
+</div>

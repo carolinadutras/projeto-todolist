@@ -1,0 +1,66 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(to right, #8ec5fc, #ba7af8);
+
+}
+main{    
+    background-color: #ffffff;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+        
+}
+.titulo{
+    justify-content: center;
+}
+/* ------Botões------- */
+
+.btnAdd{
+    background-color: #ba7af8;
+    font-weight: bold;
+    border: none;
+    width: 100%;
+    border-radius: 2px;   
+    height: 40px;
+    color: #ffffff
+      
+}
+.allToDo{
+    display: flex
+
+}
+.erro{
+    font-size: 12px;
+    background-color: pink;
+    padding: 15px 5px;
+    border-radius: 5px;
+    border-color: red;
+    color:red;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.inputTarefa{
+    border: none;
+    background-color: #ffffff;
+    width: 90%;
+    border-radius: 2px;   
+    height: 40px;
+}
+
+.tarefa{
+background-color: #ffffff;
+border-bottom: 100px, grey; 
+height: 30px;
+
+}
+.checkTarefa{
+    
+text-decoration: line-through;
+
+}
+
+.botaoX{
+   display: flex
+}

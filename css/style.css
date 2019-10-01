@@ -64,3 +64,29 @@ text-decoration: line-through;
 .botaoX{
    display: flex
 }
+.allBtn{
+    display: flex;  
+    border: none;
+}
+
+
+.btnDelete {
+    background-color: #f87a7a;
+    font-weight: bold;
+    border: none;
+    width: 60%;
+    border-radius: 2px;   
+    height: 40px;
+    color: #ffffff
+
+}
+
+.btnSelect {
+    background-color: #8ff87a;
+    font-weight: bold;
+    border: none;
+    width: 60%;
+    border-radius: 2px;   
+    height: 40px;
+    color: #ffffff;
+}

@@ -39,7 +39,7 @@ formulario.addEventListener('submit', function(evento){
         divFilha.appendChild(botaoX);        
         botaoX.setAttribute('class', 'botaoX')
         botaoX.textContent = 'X'
-        
+
         todasTarefas.addEventListener('click', function(){
             
             if (todasTarefas.classList.contains('checkTarefa')){
@@ -48,9 +48,9 @@ formulario.addEventListener('submit', function(evento){
                 todasTarefas.classList.add('checkTarefa')
             }  
         })
+        
         botaoX.addEventListener('click', function(){
-            divFilha.remove()
-                         
+            divFilha.remove()         
         })
             }
    

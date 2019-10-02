@@ -3,51 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">        
     <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <title>To do List </title>
+    <title>To do List</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
-    <section>
+    <main>
+        <form class='insiraTarefa' id="insiraTarefa">
+            <div class="titulo">
+                <h1>Adicione uma nova tarefa</h1>
+            </div>
+             <input type="text" id="inputTarefa" class="inputTarefa" placeholder="Adicione uma tarefa">
+             <button id="btnAdd" class="btnAdd">ADD</button>
+        </form>
 
-        <div class="title">
-            <h1>Adicione uma nova tarefa</h1>
-        </div>
-
-        <div class="input">
-             <input type="text" placeholder="Digite uma nova tarefa">
-        </div>
-
-        <div class="btnAdd">
-            <button>ADD</button>
-        </div>
-
-        <div class="containt">
-            <ol class="toDo"></ol>
-        </div>
-
-        <div class="allBtn">
-
-            <div>
-                <button id="btnSelect">Selecionar Todos</button>               
+            <div id="allToDo" class="containt">
+                <ul id="toDo" class="toDo"></ul>            
             </div>
 
-            <div>
-                <button id="btnDelete">Deletar</button>
-            </div>
+            <div class="allBtn">
+                <button class="btnSelect" id="btnSelect"> selecionar todos</button>
+                <button class="btnDelete" id="btnDelete"> remover todos</button>
+            </div>  
 
-
-        </div>  
-
-
-
-
-
-    </section>
-
-<script src="js/script.js"></script>
+        
+    </main>
+    
+    <script src="js/script.js"></script>
 </body>
-
 </html>

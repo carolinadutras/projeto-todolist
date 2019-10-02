@@ -1,0 +1,83 @@
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(to right, #8ec5fc, #ba7af8);
+
+}
+section{
+    background-color: #ffffff;
+    width: 90%;
+    height: 100%;
+    
+}
+/* ------Botões------- */
+
+.btnAdd{
+    background-color: #ba7af8;
+    font-weight: bold;
+    border: none;
+    width: 100%;
+    border-radius: 2px;   
+    height: 40px;
+    color: #ffffff
+    
+  
+}
+
+.allBtn{
+    display: flex;  
+    border: none;
+}
+
+
+
+.btnDelete {
+    background-color: #f87a7a;
+    font-weight: bold;
+    border: none;
+    width: 60%;
+    border-radius: 2px;   
+    height: 40px;
+    color: #ffffff
+
+}
+
+.btnSelect {
+    background-color: #8ff87a;
+    font-weight: bold;
+    border: none;
+    width: 60%;
+    border-radius: 2px;   
+    height: 40px;
+    color: #ffffff;
+}
+
+
+
+.tarefa{
+    text-align: center;
+    font-style: italic;
+    background-color: #ffffff;
+    width: 100%;
+    border-radius: 2px;   
+    height: 40px;
+
+
+}
+.inputTask{
+    border: none;
+    background-color: #ffffff;
+    width: 90%;
+    border-radius: 2px;   
+    height: 40px;
+
+}
+.erro{
+    font-size: 12px;
+    background-color: pink;
+    padding: 15px 5px;
+    border-radius: 5px;
+    border-color: red;
+    color:red;
+    text-align: center;
+}

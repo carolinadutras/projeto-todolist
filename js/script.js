@@ -9,12 +9,10 @@ const toDo = document.getElementById('toDo');// ul onde vou deixar todas minhas 
 //fazendo o form ouvir o evento de add
 
 
+
 let btnSelect= document.getElementById ("btnSelect");
 let btnDelete= document.getElementById ("btnDelete");
-
-
-
-
+let btnDeleteRiscado = document.getElementById("btnDeleteRiscado")
 
 // const checkTarefa = tarefa.classList('checkTarefa')
 
@@ -54,6 +52,7 @@ formulario.addEventListener('submit', function(evento){
         botaoX.setAttribute('class', 'botaoX')
         botaoX.textContent = 'X'
     
+        // allToDo.setAttribute('draggable','true')
         toDo.setAttribute('draggable','true');
         divFilha.setAttribute('draggable','true');
         todasTarefas.setAttribute('draggable','true');
@@ -72,6 +71,7 @@ formulario.addEventListener('submit', function(evento){
             } else{
                 todasTarefas.classList.add('checkTarefa')
             }  
+            
         })
         
         botaoX.addEventListener('click', function(){
@@ -113,4 +113,4 @@ formulario.addEventListener('submit', function(evento){
     }
 })
 
-
+//dentro do botao de riscar, criar um if e um click que quando for clicado ira removar a classe

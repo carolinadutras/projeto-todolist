@@ -8,8 +8,6 @@ const toDo = document.getElementById('toDo');// ul onde vou deixar todas minhas 
 // const allToDo = document.getElementById('allToDo')// minha div com minha lista ?? 
 //fazendo o form ouvir o evento de add
 
-
-
 let btnSelect= document.getElementById ("btnSelect");
 let btnDelete= document.getElementById ("btnDelete");
 let btnDeleteRiscado = document.getElementById("btnDeleteRiscado")
@@ -66,12 +64,14 @@ formulario.addEventListener('submit', function(evento){
 
         todasTarefas.addEventListener('click', function(){
             
-            if (todasTarefas.classList.contains('checkTarefa')){
-            todasTarefas.classList.remove('checkTarefa')
-            } else{
+            if(todasTarefas.classList.contains('checkTarefa')) {
+                todasTarefas.classList.remove("checkTarefa")
+            }else{
                 todasTarefas.classList.add('checkTarefa')
-            }  
+            }
+         
             
+           
         })
         
         botaoX.addEventListener('click', function(){
@@ -81,11 +81,10 @@ formulario.addEventListener('submit', function(evento){
 
         btnSelect.addEventListener("click", function(){
 
-            if (todasTarefas.classList.contains("checkTodos")){
-                todasTarefas.classList.remove("checkTodos")
-            }else {
+            todasTarefas.classList.contains("checkTodos")
+            
                 todasTarefas.classList.add("checkTodos")
-            }                 
+                         
         })
 
         btnDelete.addEventListener("click", function(){

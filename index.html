@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">        
+    <link rel="stylesheet" href="./css/style.css">
+    <title>To do List</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <main>
+        <form class='insiraTarefa' id="insiraTarefa">
+            <div class="titulo">
+                <h1>Adicione uma nova tarefa</h1>
+            </div>
+             <input  type="text" id="inputTarefa" class="inputTarefa"  placeholder=     "Adicione uma tarefa"> 
+             <button id="btnAdd" class="btnAdd">ADD</button>
+        </form>
+        <div class="divErro"></div>
+
+            <!-- <div id="allToDo" class="containt"> -->
+                <ul id="toDo" class="toDo"></ul>            
+            <!-- </div> -->
+
+            <div class="allBtn">
+                <button class="btnSelect" id="btnSelect"> selecionar todos</button>
+                <button class="btnDelete" id="btnDelete"> remover todos</button>
+            </div>  
+
+        
+    </main>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

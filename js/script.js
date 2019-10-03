@@ -8,7 +8,6 @@ const toDo = document.getElementById('toDo');// ul onde vou deixar todas minhas 
 // const allToDo = document.getElementById('allToDo')// minha div com minha lista ?? 
 //fazendo o form ouvir o evento de add
 
-
 let btnSelect= document.getElementById ("btnSelect");
 let btnDelete= document.getElementById ("btnDelete");
 
@@ -81,11 +80,10 @@ formulario.addEventListener('submit', function(evento){
 
         btnSelect.addEventListener("click", function(){
 
-            if (todasTarefas.classList.contains("checkTodos")){
-                todasTarefas.classList.remove("checkTodos")
-            }else {
+            todasTarefas.classList.contains("checkTodos")
+            
                 todasTarefas.classList.add("checkTodos")
-            }                 
+                         
         })
 
         btnDelete.addEventListener("click", function(){

@@ -10,10 +10,7 @@ const toDo = document.getElementById('toDo');// ul onde vou deixar todas minhas 
 
 let btnSelect= document.getElementById ("btnSelect");
 let btnDelete= document.getElementById ("btnDelete");
-
-
-
-
+let btnDeleteRiscado = document.getElementById("btnDeleteRiscado")
 
 // const checkTarefa = tarefa.classList('checkTarefa')
 
@@ -41,6 +38,8 @@ formulario.addEventListener('submit', function(evento){
         erro.classList.remove('erro');
         formulario.reset();
 
+        
+
         let divFilha = document.createElement('div');
         toDo.appendChild(divFilha)    
     
@@ -57,6 +56,7 @@ formulario.addEventListener('submit', function(evento){
         botaoX.setAttribute('class', 'botaoX')
         botaoX.textContent = 'X'
     
+        // allToDo.setAttribute('draggable','true')
         toDo.setAttribute('draggable','true');
         divFilha.setAttribute('draggable','true');
         todasTarefas.setAttribute('draggable','true');
@@ -70,11 +70,15 @@ formulario.addEventListener('submit', function(evento){
 
 
         todasTarefas.addEventListener('click', function(){
+
+
+  
             if(todasTarefas.classList.contains('checkTarefa')){
                 todasTarefas.classList.remove('checkTarefa');
             }else{
             todasTarefas.classList.add('checkTarefa');
             }
+
            
         })
         
@@ -87,14 +91,26 @@ formulario.addEventListener('submit', function(evento){
 
             todasTarefas.classList.contains("checkTodos");
             
+
             todasTarefas.classList.add("checkTodos");
                          
+
         })
 
         btnDelete.addEventListener("click", function(){
             divFilha.remove()
         })
         
+
+
+        btnDeleteRiscado.addEventListener("click", function(){
+            if(todasTarefas.classList.contains("checkTarefa")){
+                divFilha.remove()
+            }                    
+        })
+        
+
+
         toDo.addEventListener('dragstart', function(evento) {
             dragging = evento.target.closest('.tarefa');
             console.log(divFilha)
@@ -113,5 +129,4 @@ formulario.addEventListener('submit', function(evento){
         })   
     }
 })
-
 

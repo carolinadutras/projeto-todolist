@@ -64,7 +64,7 @@ main{
 
 }
 
-.tarefa{
+.tarefa {
 background-color: #ffffff;
 border-bottom: 1px solid grey; 
 height: 50px;
@@ -72,6 +72,8 @@ display: flex;
 justify-content: space-between;
 
 }
+
+
 .checkTarefa{    
 text-decoration: line-through;
 }

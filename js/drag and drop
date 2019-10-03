@@ -1,0 +1,42 @@
+//Loop through all Todo Items (Handle all Todo Items Dragging)
+for(let i = 0; i < allToDo.length; i++) {
+    let item = allToDo[i];
+    //Mouse Button Down
+    item.addEventListener("mousedown", (e) => { onMouseDown(e, item); });
+    //Mouse Move (Under the Page Body since mouse moves right there)
+    document.body.addEventListener("mousemove", (e) => {
+        onMouseMove(e, item);
+    });
+    //Mouse Up 
+    item.addEventListener("mouseup", (e) => {
+      onMouseUp(e, item);
+    });
+    function onMouseDown(e, item) {
+        isMouseDown = true;
+        
+        mouseOffset = {x: item.offsetLeft - e.clientX, y: item.offsetTop - e.clientY};
+        
+        item.style.backgroundColor = "#E57373";
+      }
+      //Mouse Up 
+      function onMouseUp(e, item) {
+        isMouseDown = false;
+        item.style.backgroundColor = "#F44336";
+      }
+
+
+
+
+    for(allToDo of toDo ) {
+        toDo.addEventListener("dragover", dragover)
+        toDo.addEventListener("dragenter", dragenter)
+        toDo.addEventListener("drop", drop)
+
+        function dragover(e) {
+            e.preventDefault()
+          }function dragenter(e) {
+            e.preventDefault()
+          }function drop() {
+            this.append(box)
+          }
+        }

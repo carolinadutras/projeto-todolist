@@ -68,14 +68,14 @@ main{
 }
 
 .textoTarefa{
-    width: 40px;
+    min-width:40px;
 
 }
 
 .tarefa {
 background-color: #ffffff;
 border-bottom: 1px solid grey; 
-height: 50px;
+min-height: 50px;
 display: flex;
 justify-content: space-between;
 
@@ -109,7 +109,7 @@ text-decoration: line-through;
     font-weight: bold;
     border: none;
     width: 60%;
-    border-radius: 2px;   
+    /* border-radius: 2px;    */
     height: 40px;
     color: #ffffff;
     border-radius: 18px;

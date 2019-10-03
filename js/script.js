@@ -1,4 +1,3 @@
-
 // -colocar texto do input como tarefa a fazer, (embaixo - como comentario)
 // -no botão add inserir um event listener para o click
 
@@ -12,6 +11,10 @@ const erro = document.createElement('p')
 allToDo.appendChild(erro); 
 let btnSelect= document.getElementById ("btnSelect")
 let btnDelete= document.getElementById ("btnDelete")
+
+
+
+
 
 // const checkTarefa = tarefa.classList('checkTarefa')
 
@@ -72,9 +75,50 @@ formulario.addEventListener('submit', function(evento){
            
         
        
-     }  
+     } 
      
      
-    
+// allToDo.setAttribute("draggable", true)
+// toDo.setAttribute("draggable", true)
+// todasTarefas.setAttribute("draggable", true)
+
+
+// allToDo.addEventListener("dragStart"function(ev){
+//     dragging = ev.target.closest(".div")
+// })
+ 
+
+// allToDo.addEventListener("dragover", function(ev){
+//     ev.preventDefault()
+//     const node = ev.target.closest(",div")
+//     this.insertBefore(dragging, node)
+// })
    
+
+// allToDo.addEventListener("dragend", function(ev){
+
+// dragging = null
+// )}
+
+
 })
+
+
+
+
+
+
+
+
+
+
+// function drop(ev){
+//     ev.target.append(document.getElementById(id))
+// }
+
+
+
+
+
+
+

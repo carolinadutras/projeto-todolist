@@ -66,11 +66,10 @@ formulario.addEventListener('submit', function(evento){
 
         todasTarefas.addEventListener('click', function(){
             
-            if (todasTarefas.classList.contains('checkTarefa')){
-            todasTarefas.classList.remove('checkTarefa')
-            } else{
-                todasTarefas.classList.add('checkTarefa')
-            }  
+            todasTarefas.classList.contains('checkTarefa');
+            
+            todasTarefas.classList.add('checkTarefa');
+           
         })
         
         botaoX.addEventListener('click', function(){

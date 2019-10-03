@@ -47,6 +47,10 @@ formulario.addEventListener('submit', function(evento){
         let todasTarefas = document.createElement('p')
         divFilha.appendChild(todasTarefas);
         divFilha.classList.add("tarefa");
+
+        let etiqueta = document.createElement('option')
+        formulario.appendChild(etiqueta)
+        etiqueta.setAttribute('value', 'compras')
     
         let botaoX = document.createElement('button')
         divFilha.appendChild(botaoX);        
@@ -57,6 +61,7 @@ formulario.addEventListener('submit', function(evento){
         divFilha.setAttribute('draggable','true');
         todasTarefas.setAttribute('draggable','true');
         botaoX.setAttribute('draggable', 'true');
+        // allToDo.setAttribute('draggable', 'true')
       
         divFilha.classList.add("tarefa");
         
@@ -65,10 +70,11 @@ formulario.addEventListener('submit', function(evento){
 
 
         todasTarefas.addEventListener('click', function(){
-            
-            todasTarefas.classList.contains('checkTarefa');
-            
+            if(todasTarefas.classList.contains('checkTarefa')){
+                todasTarefas.classList.remove('checkTarefa');
+            }else{
             todasTarefas.classList.add('checkTarefa');
+            }
            
         })
         
@@ -79,9 +85,9 @@ formulario.addEventListener('submit', function(evento){
 
         btnSelect.addEventListener("click", function(){
 
-            todasTarefas.classList.contains("checkTodos")
+            todasTarefas.classList.contains("checkTodos");
             
-                todasTarefas.classList.add("checkTodos")
+            todasTarefas.classList.add("checkTodos");
                          
         })
 
@@ -89,8 +95,6 @@ formulario.addEventListener('submit', function(evento){
             divFilha.remove()
         })
         
-        
-
         toDo.addEventListener('dragstart', function(evento) {
             dragging = evento.target.closest('.tarefa');
             console.log(divFilha)

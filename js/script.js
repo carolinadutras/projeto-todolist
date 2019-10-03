@@ -38,6 +38,8 @@ formulario.addEventListener('submit', function(evento){
         erro.classList.remove('erro');
         formulario.reset();
 
+        
+
         let divFilha = document.createElement('div');
         toDo.appendChild(divFilha)    
     
@@ -68,8 +70,7 @@ formulario.addEventListener('submit', function(evento){
                 todasTarefas.classList.remove("checkTarefa")
             }else{
                 todasTarefas.classList.add('checkTarefa')
-            }
-         
+            }  
             
            
         })
@@ -83,14 +84,19 @@ formulario.addEventListener('submit', function(evento){
 
             todasTarefas.classList.contains("checkTodos")
             
-                todasTarefas.classList.add("checkTodos")
-                         
+                todasTarefas.classList.add("checkTodos")                         
         })
 
         btnDelete.addEventListener("click", function(){
             divFilha.remove()
         })
         
+
+        btnDeleteRiscado.addEventListener("click", function(){
+            if(todasTarefas.classList.contains("checkTarefa")){
+                divFilha.remove()
+            }                    
+        })
         
 
         toDo.addEventListener('dragstart', function(evento) {
@@ -112,4 +118,3 @@ formulario.addEventListener('submit', function(evento){
     }
 })
 
-//dentro do botao de riscar, criar um if e um click que quando for clicado ira removar a classe

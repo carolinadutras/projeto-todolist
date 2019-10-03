@@ -1,4 +1,3 @@
-
 // -colocar texto do input como tarefa a fazer, (embaixo - como comentario)
 // -no botão add inserir um event listener para o click
 
@@ -12,6 +11,10 @@ const toDo = document.getElementById('toDo');// ul onde vou deixar todas minhas 
 
 let btnSelect= document.getElementById ("btnSelect");
 let btnDelete= document.getElementById ("btnDelete");
+
+
+
+
 
 // const checkTarefa = tarefa.classList('checkTarefa')
 

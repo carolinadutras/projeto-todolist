@@ -11,6 +11,7 @@ const toDo = document.getElementById('toDo');// ul onde vou deixar todas minhas 
 let btnSelect= document.getElementById ("btnSelect");
 let btnDelete= document.getElementById ("btnDelete");
 let btnDeleteRiscado = document.getElementById("btnDeleteRiscado")
+let prioridade = document.getElementById('priority')
 
 // const checkTarefa = tarefa.classList('checkTarefa')
 
@@ -36,10 +37,7 @@ formulario.addEventListener('submit', function(evento){
         // erro.remove('erro')
         erro.remove('erro')
         erro.classList.remove('erro');
-        formulario.reset();
-
         
-
         let divFilha = document.createElement('div');
         toDo.appendChild(divFilha)    
     
@@ -47,12 +45,20 @@ formulario.addEventListener('submit', function(evento){
         divFilha.appendChild(todasTarefas);
         divFilha.classList.add("tarefa");
 
+        // divFilha.appendChild(priority.value);
+        prioridade.classList.add('priority');
+
+        let valorPrioridade = document.createElement('p');
+        divFilha.appendChild(valorPrioridade);
+        valorPrioridade.textContent = prioridade.value;
+        valorPrioridade.classList.add('priority')
+
         // let etiqueta = document.createElement('option')
         // formulario.appendChild(etiqueta)
         // etiqueta.setAttribute('value', 'compras')
 
         todasTarefas.addEventListener('dblclick', function(){
-            // todasTarefas.classList.remove('')            
+            todasTarefas.classList.remove('')            
             todasTarefas.setAttribute('contentEditable', true)
         })
 
@@ -65,8 +71,8 @@ formulario.addEventListener('submit', function(evento){
         // allToDo.setAttribute('draggable','true')
         toDo.setAttribute('draggable','true');
         divFilha.setAttribute('draggable','true');
-        todasTarefas.setAttribute('draggable','true');
-        botaoX.setAttribute('draggable', 'true');
+        // todasTarefas.setAttribute('draggable','true');
+        // botaoX.setAttribute('draggable', 'true');
         // allToDo.setAttribute('draggable', 'true')
       
         divFilha.classList.add("tarefa");
@@ -108,16 +114,16 @@ formulario.addEventListener('submit', function(evento){
         })
         
 
-
         btnDeleteRiscado.addEventListener("click", function(){
             if(todasTarefas.classList.contains("checkTarefa")){
                 divFilha.remove();
             } else{ todasTarefas.classList.contains("checkTarefa")
-                divFilha.add();
-        }                   
-        });
-        
 
+                divFilha.add();
+
+        }                   
+        })
+        
 
         toDo.addEventListener('dragstart', function(evento) {
             dragging = evento.target.closest('.tarefa');
@@ -135,6 +141,7 @@ formulario.addEventListener('submit', function(evento){
             
             dragging = null
         })   
+        formulario.reset();
     }
 })
 

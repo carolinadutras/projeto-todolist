@@ -35,13 +35,20 @@ main{
     color: #ffffff;
 }
 
-.allToDo{
-    display: flex
+
+.priority{
+    border: none;
+    background-color: #ffffff;
+    height: 40px;
+    display: flex;
+    min-width: 50px;
+    
+
+
 }
 
-
-.toDo{
-
+.allToDo{
+    display: flex
 }
 
 
@@ -80,6 +87,13 @@ justify-content: space-between;
 
 }
 
+.tarefa p{
+    background-color: #ffffff;
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    
+    }
 
 .checkTarefa{    
 text-decoration: line-through;
@@ -146,7 +160,9 @@ text-decoration: line-through;
 
 @media (min-width: 375px) {
     main{            
+
          width:75%;         
+
     } 
 }
 
@@ -186,7 +202,9 @@ text-decoration: line-through;
     @media (min-width: 768px) {
         
         main{
+
             width: 50%;
+
         }
 
         .titulo h1 {
@@ -201,8 +219,7 @@ text-decoration: line-through;
         .btnAdd {
             font-size: 17px
         }    
-        
-        
+                
     }
 
 

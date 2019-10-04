@@ -30,10 +30,9 @@ main{
     font-weight: bold;
     border: none;
     width: 100%;
-    border-radius: 2px;   
+    border-radius: 4px;   
     height: 40px;
     color: #ffffff;
-    border-radius: 16px;     
 }
 
 .allToDo{
@@ -109,10 +108,9 @@ text-decoration: line-through;
     font-weight: bold;
     border: none;
     width: 60%;
-    /* border-radius: 2px;    */
     height: 40px;
     color: #ffffff;
-    border-radius: 18px;
+    border-radius: 5px;
 }
 
 
@@ -123,8 +121,9 @@ text-decoration: line-through;
     width: 60%;
     border-radius: 2px;   
     height: 40px;
-    color: #ffffff;
-    border-radius: 18px;   
+    color: #ffffff;   
+    border-radius: 5px;
+      
 }
 
 .btnDeleteRiscado{
@@ -135,7 +134,7 @@ text-decoration: line-through;
     border-radius: 2px;   
     height: 40px;
     color: #ffffff;
-    border-radius: 18px; 
+    border-radius: 5px; 
 }
 
 
@@ -147,20 +146,28 @@ text-decoration: line-through;
 
 
 
-     /*** MEDIA QUERIES ***/
+     /*** MEDIA QUERIES ***/ 
 
-@media (min-width: 414px) {
-    .main{
-        width: 90%;
+@media (min-width: 375px) {
+    main{            
+         min-width:75%;         
+    } 
+}
+
+
+@media (min-width: 425px) {
+    main{
+       width: 75%;
     }
 
     .titulo h1 {
-        font-size: 21px;
+        font-size: 12px;
     }
 
     .inputTarefa{
         font-size: 18px
     }
+    
     
     .btnSelect {
         font-size: 16px;
@@ -176,14 +183,13 @@ text-decoration: line-through;
 
     .tarefa{
         font-size: 18px;  
-    }
+    }    
 }
 
 
     @media (min-width: 768px) {
-
-        .main{
-            width: 50%;
+        main{
+            width: 60%%;
         }
 
         .titulo h1 {
@@ -196,21 +202,10 @@ text-decoration: line-through;
 
         .btnAdd {
             font-size: 17px
-        }
-
-
-
-
-
-
-
-
-
-
-
+        }    
         
-
-}
+        
+    }
 
 
 

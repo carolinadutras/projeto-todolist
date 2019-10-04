@@ -111,9 +111,11 @@ formulario.addEventListener('submit', function(evento){
 
         btnDeleteRiscado.addEventListener("click", function(){
             if(todasTarefas.classList.contains("checkTarefa")){
-                divFilha.remove()
-            }                    
-        })
+                divFilha.remove();
+            } else{ todasTarefas.classList.contains("checkTarefa")
+                divFilha.remove() 
+        }                   
+        });
         
 
 

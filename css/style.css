@@ -113,25 +113,21 @@ text-decoration: line-through;
     border-radius: 5px;
 }
 
-
 .btnSelect {
     background-color: #8ff87a;
     font-weight: bold;
     border: none;
     width: 60%;
-    border-radius: 2px;   
     height: 40px;
     color: #ffffff;   
-    border-radius: 5px;
-      
+    border-radius: 5px;      
 }
 
 .btnDeleteRiscado{
     background-color: #6a71d8;
     font-weight: bold;
     border: none;
-    width: 60%;
-    border-radius: 2px;   
+    width: 60%;       
     height: 40px;
     color: #ffffff;
     border-radius: 5px; 
@@ -150,14 +146,14 @@ text-decoration: line-through;
 
 @media (min-width: 375px) {
     main{            
-         min-width:75%;         
+         width:75%;         
     } 
 }
 
 
 @media (min-width: 425px) {
     main{
-       width: 75%;
+       width: 65%;
     }
 
     .titulo h1 {
@@ -165,7 +161,7 @@ text-decoration: line-through;
     }
 
     .inputTarefa{
-        font-size: 18px
+        font-size: 15px
     }
     
     
@@ -188,8 +184,9 @@ text-decoration: line-through;
 
 
     @media (min-width: 768px) {
+        
         main{
-            width: 60%%;
+            width: 50%;
         }
 
         .titulo h1 {
@@ -198,7 +195,8 @@ text-decoration: line-through;
 
         .inputTarefa {
             font-size: 21px;
-        }
+
+                    }
 
         .btnAdd {
             font-size: 17px

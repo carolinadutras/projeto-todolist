@@ -113,7 +113,7 @@ formulario.addEventListener('submit', function(evento){
             if(todasTarefas.classList.contains("checkTarefa")){
                 divFilha.remove();
             } else{ todasTarefas.classList.contains("checkTarefa")
-                divFilha.remove() 
+                divFilha.add();
         }                   
         });
         

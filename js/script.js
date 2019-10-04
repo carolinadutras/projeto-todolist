@@ -47,9 +47,15 @@ formulario.addEventListener('submit', function(evento){
         divFilha.appendChild(todasTarefas);
         divFilha.classList.add("tarefa");
 
-        let etiqueta = document.createElement('option')
-        formulario.appendChild(etiqueta)
-        etiqueta.setAttribute('value', 'compras')
+        // let etiqueta = document.createElement('option')
+        // formulario.appendChild(etiqueta)
+        // etiqueta.setAttribute('value', 'compras')
+
+        todasTarefas.addEventListener('dblclick', function(){
+            // todasTarefas.classList.remove('')            
+            todasTarefas.setAttribute('contentEditable', true)
+        })
+
     
         let botaoX = document.createElement('button')
         divFilha.appendChild(botaoX);        
